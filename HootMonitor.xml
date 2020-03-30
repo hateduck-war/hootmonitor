@@ -1,0 +1,27 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                   xsi:schemaLocation="http://www.blizzard.com/wow/ui/ 
+                   ..\..\FrameXML\UI.xsd">
+
+	<Script file="HootMonitor.lua"/>
+	
+	
+	
+	
+	<Frame name="HMMain" parent="UIParent" >
+		<Size>
+			<AbsDimension x="1" y="1"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOP" relativeTo="UIParent"/>
+		</Anchors>
+		<Scripts>
+			<OnLoad>
+				HootMonitor_OnLoad()
+			</OnLoad>
+			<OnEvent>
+				HootMonitor_Respond(self, event, ...)
+			</OnEvent>
+		</Scripts>
+	</Frame>
+</Ui>

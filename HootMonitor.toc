@@ -1,0 +1,7 @@
+## Interface: 11304
+## Title: Hoot Monitor!!
+## Notes: Plays Moonkin hoots when your guild moonkin emotes!
+## Author: Hateduck / Olgruff
+## SavedVariablesPerCharacter: moonkinName
+HootMonitor.lua
+HootMonitor.xml
