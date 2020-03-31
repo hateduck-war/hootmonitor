@@ -4,7 +4,7 @@
 
 -- Moonkin Name to track
 moonkinName = "momokiki"
-hootz = {5357, 5358, 5360}
+hootz = {5356, 5357, 5358, 5359, 5360, 5361}
 
 -- Function for loading addon. Fired from HootMonitor.xml
 function HootMonitor_OnLoad()
@@ -64,7 +64,7 @@ function HootMonitor_Respond(self, event, ...)
 
 		-- If desired moonkin name is emoter and emote says "hoot" at all, play sound
 		if (string.find(lowerPlayerName, moonkinName) and string.find(lowerText, "hoot")) then
-			hootToPlay=math.random(1, 100.0/33)
+			hootToPlay=math.random(1, 6)
 			PlaySound(hootz[hootToPlay])
 		end
 	end	
